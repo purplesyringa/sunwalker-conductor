@@ -1,0 +1,21 @@
+[package]
+name = "sunwalker-conductor"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ivanq <imachug@gmail.com>"]
+license = "GPL-3.0-or-later"
+description = "Conductor for sunwalker judge system"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "3.1.6", features = ["derive"] }
+futures-util = "0.3.21"
+regex = "1"
+rmp-serde = "1.0.0"
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde-xml-rs = "0.5.1"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.17.1", features = ["rustls"] }
+toml = "0.5.8"
